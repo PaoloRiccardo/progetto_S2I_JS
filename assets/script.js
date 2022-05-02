@@ -29,11 +29,6 @@ function applyColor() {
     }
 }
 
-function applyImage() {
-    if(count.innerHTML > 0) {
-        onclick
-    }
-    else if (count. innerHTML < 0) {
-        count.image = url(assets/images/koala.png);
-    }
-}
+
+
+
