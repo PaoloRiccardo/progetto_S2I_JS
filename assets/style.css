@@ -13,6 +13,8 @@ outline: none;
 
 h1, h2 {
     text-align: center;
+    background-color: aliceblue;
+    opacity: 0.8;
     
 }
 body {
@@ -21,6 +23,10 @@ background-color: antiquewhite;
 background-image: url(../assets/images/sfondo.jpg);
 background-position: left;
 
+}
+
+.sadkoala {
+    box-sizing: content-box;
 }
 
 .container {
@@ -32,10 +38,11 @@ justify-content: center;
 
 
 .container .counter {
-    background-color: whitesmoke;
+    background-color: aliceblue;
     padding: 2.5rem;
     border-radius: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0.9;
 }
 
 .container .counter p {
@@ -62,10 +69,10 @@ line-height: 1;
 }
 
 .container .buttons button#reset {
-background-color: rgba(255, 255, 255, 0.507);
+background-color: rgba(155 154 154 / 51%);;
 color:black;
 }
 .container .buttons button#add {
-    background-color: rgb(5, 78, 5);
+    background-color: rgb(99 124 45);
     color: white;
 }
