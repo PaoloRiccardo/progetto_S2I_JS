@@ -25,9 +25,7 @@ background-position: left;
 
 }
 
-.sadkoala {
-    box-sizing: content-box;
-}
+
 
 .container {
 height: 100vh;
@@ -39,7 +37,7 @@ justify-content: center;
 
 .container .counter {
     background-color: aliceblue;
-    padding: 2.5rem;
+    padding: 20px;
     border-radius: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     opacity: 0.9;
@@ -75,4 +73,14 @@ color:black;
 .container .buttons button#add {
     background-color: rgb(99 124 45);
     color: white;
+}
+
+@media screen and (max-width:844px) {
+   h1,h2 {
+       font-size: 20px;
+   }
+body {
+    background-position: center;
+}
+  
 }
