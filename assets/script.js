@@ -42,7 +42,11 @@ function countNumber(){
     }
 }
 
-
-
+function animation (){
+   let firekoala = document.getElementById("koalafire") 
+    setTimeout(() => firekoala.style.display= "block",);
+    setTimeout(() => firekoala.style.display= "none", 1000);
+}   
+ 
 
 

@@ -25,6 +25,15 @@ background-position: left;
 
 }
 
+#koalafire {
+   
+    display: none;
+    position: fixed;
+    top: 12em;
+    left: 47em;
+    opacity: 0.9;
+}
+
 
 
 .container {
@@ -75,12 +84,18 @@ color:black;
     color: white;
 }
 
-@media screen and (max-width:844px) {
+@media screen and (max-width: 405px) {
    h1,h2 {
        font-size: 20px;
    }
 body {
     background-position: center;
 }
-  
+  #koalafire {
+    display: none;
+    position: fixed;
+    top: 15em;
+    left: 10em;
+    opacity: 0.9;
+  }
 }
