@@ -53,5 +53,5 @@ function animationSave (){
      setTimeout(() => safekoala.style.display= "block",);
      setTimeout(() => safekoala.style.display= "none", 1000);
  }  
-
+//miglioramenti da fare: -animazione deve comparire in posizione random -effetto click sfocato//
 
