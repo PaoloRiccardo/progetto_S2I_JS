@@ -41,12 +41,17 @@ function countNumber(){
         alert("Marvelous! You're doing great!")
     }
 }
-
+   
 function animation (){
    let firekoala = document.getElementById("koalafire") 
     setTimeout(() => firekoala.style.display= "block",);
     setTimeout(() => firekoala.style.display= "none", 1000);
 }   
- 
+
+function animationSave (){
+    let safekoala = document.getElementById("koalasafe") 
+     setTimeout(() => safekoala.style.display= "block",);
+     setTimeout(() => safekoala.style.display= "none", 1000);
+ }  
 
 

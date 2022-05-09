@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <title>Koala's Count</title>
@@ -14,18 +13,20 @@
 </head>
 
 <body>
-    <h1>Australian forests are on fire! <i class="fire"></i><img src="assets/images/fire-removebg-preview.png"><br>
+    <!--title-->
+    <h1>Australian forests are on fire! <i class="fire"></i><img src="assets/images/fireforest.png"><br>
         Help the Koalas by clicking on the green icon and save them!</h1> 
-        <img id="koalafire"  src="assets/images/firekoala.png";>
+        <img id="koalafire"  src="assets/images/dislikebutton.png";>
+        <img id="koalasafe"  src="assets/images/likebutton.png";>
         <div class="container">
-        
+        <!--content-->
         <div class="counter">
             <p id="count"> 0 </p>
             <div class="buttons">
                 <button onclick="animation()" id="sub"><i class="sadkoala"></i><img src="assets/images/sadkoala1.png"> 
                 </button>
                 <button id="reset">Reset</button>
-                <button id="add"><i class="happykoala"></i><img src="assets/images/happykoala1.png"> 
+                <button onclick="animationSave()" id="add"><i class="happykoala"></i><img src="assets/images/happykoala1.png"> 
                 </button>
             </div>
         </div>

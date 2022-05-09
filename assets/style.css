@@ -29,8 +29,14 @@ background-position: left;
    
     display: none;
     position: fixed;
-    top: 12em;
-    left: 47em;
+    top: 14em;
+    left: 7em;
+    opacity: 0.9;
+}
+#koalasafe {
+    display: none;
+    position: fixed;
+    bottom: 17em;
     opacity: 0.9;
 }
 
@@ -91,11 +97,5 @@ color:black;
 body {
     background-position: center;
 }
-  #koalafire {
-    display: none;
-    position: fixed;
-    top: 15em;
-    left: 10em;
-    opacity: 0.9;
-  }
+
 }
