@@ -41,9 +41,9 @@
   #koalafire {
    
     display: none;
-    position: fixed;
-    top: 14em;
-    right: 20em;
+    position: relative;
+    top: 18em;
+    left: 20em;
     opacity: 0.9;
 }
 #koalasafe {
@@ -143,7 +143,8 @@
     }
 
     #koalafire{
-        left: 6em;
+        left: 1em;
+        top: 5em;
     }
 
     #koalasafe{
