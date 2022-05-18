@@ -1,43 +1,99 @@
-const count = document.getElementById("count");
-const add = document.getElementById("add");
-const sub = document.getElementById("sub");
-const reset = document.getElementById("reset");
+// Koala Count
 
-add.addEventListener("click", () => {
-    count.innerHTML++;
-    applyColor();
-    countNumber()
+let screen = document.createElement("div");
+
+document.getElementById("box").appendChild(screen);
+
+screen.classList.add("screen");
+
+// Number 
+let numb = document.createElement("p");
+let numb_text = document.createTextNode("0");
+
+numb.appendChild(numb_text);
+screen.appendChild(numb);
+
+numb.classList.add("number");
+
+// Btn Container
+
+let btn_container = document.createElement("div");
+screen.after(btn_container);
+
+btn_container.classList.add("container");
+
+// Button: plus
+
+let plus = document.createElement("button");
+let plus_text = document.createTextNode("");
+
+plus.appendChild(plus_text);
+btn_container.appendChild(plus);
+
+plus.classList.add("plus-btn");
+
+// Button: Reset
+
+let reset = document.createElement("button");
+let reset_text = document.createTextNode("Reset");
+
+reset.appendChild(reset_text);
+
+btn_container.appendChild(reset);
+
+reset.classList.add("reset-btn");
+
+// Button: minus
+
+let minus = document.createElement("button");
+let minus_text = document.createTextNode("");
+
+minus.appendChild(minus_text);
+btn_container.appendChild(minus);
+
+minus.classList.add("minus-btn");
+
+
+//COUNTER  FUNCTION
+
+let i = 0;
+
+plus.addEventListener("click", () => {
+  i++;
+  countNumber();
+  animationSave ()
+  numb.innerHTML = i;
+  if (i > 0) {
+    numb.style.color = "green";
+  }
 });
 
-sub.addEventListener("click",() =>{
-    count.innerHTML--;
-    applyColor();
-    countNumber()
+minus.addEventListener("click", () => {
+  i--;
+  countNumber();
+  animation ();
+  numb.innerHTML = i;
+  if (i < 0) {
+    numb.style.color = "red";
+  }
 });
 
 reset.addEventListener("click", () => {
-    count.innerHTML = 0;
-    applyColor();
-    countNumber()
+  i = 0;
+  countNumber();
+  numb.innerHTML = i;
+
+  if (i == 0) {
+    numb.style.color = "black";
+  }
 });
 
-function applyColor() {
-    if(count.innerHTML > 0) {
-        count.style.color = "green";
-
-    } else if (count.innerHTML < 0) {
-        count.style.color = "red"; 
-    } else {
-        count.style.color = "black";  
-    }
-}
-
 function countNumber(){
-    if(count.innerHTML == -5) {
+    if(numb.innerHTML == -5) {
         alert("Are you sure you want to continue? So you won't save them!")
-    } else if(count.innerHTML == 15) {
+    } else if(numb.innerHTML == 15) {
         alert("Good job! You saved two koalas! Go up to 30 to save four!")
-    } else if (count.innerHTML == 30) {
+    } else if (numb.innerHTML == 30) {
         alert("Marvelous! You're doing great!")
     }
 }
